@@ -67,7 +67,7 @@ Show that HTTPS encrypts traffic, preventing attackers from reading POST data.
 - `Encrypted Application Data` instead of visible POST content
 
 ### 📸 Screenshot  
-> ![image](https://github.com/user-attachments/assets/169e5a14-bad9-4392-8acf-12899d0f2d94)
+> ![image](https://github.com/user-attachments/assets/c59d9246-f2fa-4657-9ed6-2b089b8c9ff0)
 
 ### 🧠 Analysis
 The same login form is used, but the data is encrypted. Wireshark cannot show the username or password, proving HTTPS prevents sniffing attacks.
