@@ -90,7 +90,7 @@ Simulate how HTTP and HTTPS behave in a network environment.
 
 
 
-HTTPS setup:
+- HTTPS setup:
 ![image](https://github.com/user-attachments/assets/004fd4f0-c501-4b83-ae10-b184f5748cb3)
 
 ### 🧠 Notes
