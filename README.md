@@ -88,6 +88,8 @@ Simulate how HTTP and HTTPS behave in a network environment.
 - HTTP server:
 ![image](https://github.com/user-attachments/assets/4fed20b2-0c76-4c9d-b2c4-252e8ac7f5b4)
 
+
+
 HTTPS setup:
 ![image](https://github.com/user-attachments/assets/38f0979c-9cc1-4688-9214-07fa71bf7846)
 
