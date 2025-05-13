@@ -1,4 +1,4 @@
-# 🔐 HTTP vs HTTPS: Wireshark & Simulation-Based Comparison
+![image](https://github.com/user-attachments/assets/ee075e24-374d-4fc7-9e4d-1855cf575d93)# 🔐 HTTP vs HTTPS: Wireshark & Simulation-Based Comparison
 
 ## 📌 Overview
 This project explores and compares HTTP and HTTPS protocols using real-world tools like **Wireshark**, **Cisco Packet Tracer**, and a **local server demo**. We highlight the security risks of HTTP and how HTTPS protects sensitive data like usernames and passwords during transmission.
@@ -40,3 +40,99 @@ Demonstrate how HTTP POST data (like usernames and passwords) can be intercepted
 
 ### 🔍 Details
 Submitted:
+username=hello123
+password=thisisapassword
+
+
+### 📸 Screenshot  
+> ![image](https://github.com/user-attachments/assets/2d3db346-68b9-456d-ba81-8a364abc2adf)
+
+
+### 🧠 Analysis
+HTTP transmits data in plaintext. Any attacker with access to the network (or a packet capture) can easily read sensitive information like login credentials.
+
+---
+
+## 3. Wireshark Demo – HTTPS
+
+### 🎯 Objective
+Show that HTTPS encrypts traffic, preventing attackers from reading POST data.
+
+### 🛠 Tools Used
+- Python HTTPS server with self-signed certificate
+- Wireshark
+
+### 🔐 What You See in Wireshark
+- TLS Handshake
+- `Encrypted Application Data` instead of visible POST content
+
+### 📸 Screenshot  
+> ![image](https://github.com/user-attachments/assets/169e5a14-bad9-4392-8acf-12899d0f2d94)
+
+### 🧠 Analysis
+The same login form is used, but the data is encrypted. Wireshark cannot show the username or password, proving HTTPS prevents sniffing attacks.
+
+---
+
+## 4. Cisco Packet Tracer Simulation
+
+### 🎯 Objective
+Simulate how HTTP and HTTPS behave in a network environment.
+
+### 🛠 Setup
+- Devices: PC, Switch, Web Server, DNS Server
+- Protocols: HTTP and symbolic HTTPS
+- Ports: 80 (HTTP), 443 (HTTPS)
+
+### 📸 Screenshots  
+> *(Insert two screenshots – one HTTP simulation, one labeled HTTPS setup)*
+
+### 🧠 Notes
+Cisco Packet Tracer doesn't simulate real TLS encryption, but it allows you to show protocol differences and port usage visually.
+
+---
+
+## 5. Local HTTPS Server Demo
+
+### 🎯 Objective
+Run a secure HTTPS server locally using Python and a self-signed SSL certificate to demonstrate encrypted traffic.
+
+### 🛠 Steps
+1. Generate certificate:
+```bash
+openssl req -new -x509 -keyout cert.key -out cert.pem -days 365 -nodes
+```
+
+2. Run Python script:
+```bash
+python secure_server.py
+```
+
+3. Open in browser:
+```
+https://localhost:4443
+```
+
+Self-certifcate warning:
+![image](https://github.com/user-attachments/assets/c4b0d46d-dc74-4d2e-a82f-854669dbbb5a)
+
+Wireshark TLS traffic:
+![image](https://github.com/user-attachments/assets/1cbd1f31-3542-4107-90fd-be3caafec55c)
+
+### 🧠 Outcome
+Data submitted via HTTPS is not readable in Wireshark. The form and credentials are protected by encryption—even with a self-signed certificate.
+
+---
+# 6. Conclusion
+-  HTTP is insecure: Anyone can intercept and read data.
+-  HTTPS is essential: It encrypts data and validates server identity.
+-  Wireshark clearly shows the difference: one is open, the other locked down.
+-  Even in basic demos, the security benefits of HTTPS are clear and measurable.
+-   _Always use HTTPS for any form-based or sensitive interactions._
+---
+# 7. References
+- 🔗 [Wireshark User Guide](https://www.wireshark.org/docs/)
+- 🔗 [Python HTTP Server Docs](https://docs.python.org/3/library/http.server.html)
+- 🔗 [TLS 1.3 – RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446)
+- 🔗 [HTTP 1.1 – RFC 2616](https://datatracker.ietf.org/doc/html/rfc2616)
+- 🔗 [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer)
