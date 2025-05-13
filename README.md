@@ -17,9 +17,6 @@ This project explores and compares HTTP and HTTPS protocols using real-world too
 ---
 
 ## 1. Theory: HTTP vs HTTPS
-
-## 1. Theory: HTTP vs HTTPS – Expanded Comparison
-
 | **Feature**              | **HTTP**                                                                 | **HTTPS**                                                                 |
 |--------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | **Protocol**             | HyperText Transfer Protocol                                               | HyperText Transfer Protocol Secure (HTTP over TLS/SSL)                    |
