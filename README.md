@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ee075e24-374d-4fc7-9e4d-1855cf575d93)# 🔐 HTTP vs HTTPS: Wireshark & Simulation-Based Comparison
+# 🔐 HTTP vs HTTPS: Wireshark & Simulation-Based Comparison
 
 ## 📌 Overview
 This project explores and compares HTTP and HTTPS protocols using real-world tools like **Wireshark**, **Cisco Packet Tracer**, and a **local server demo**. We highlight the security risks of HTTP and how HTTPS protects sensitive data like usernames and passwords during transmission.
