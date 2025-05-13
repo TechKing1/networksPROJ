@@ -18,13 +18,23 @@ This project explores and compares HTTP and HTTPS protocols using real-world too
 
 ## 1. Theory: HTTP vs HTTPS
 
-| Feature               | HTTP                          | HTTPS                             |
-|----------------------|-------------------------------|------------------------------------|
-| Protocol             | HyperText Transfer Protocol   | HyperText Transfer Protocol Secure |
-| Port                 | 80                            | 443                                |
-| Encryption           | ❌ None                       | ✅ TLS/SSL encryption              |
-| Authentication       | ❌ No                         | ✅ Certificate-based               |
-| Data Visibility      | ✅ Plaintext in transit       | ❌ Encrypted end-to-end            |
+## 1. Theory: HTTP vs HTTPS – Expanded Comparison
+
+| **Feature**              | **HTTP**                                                                 | **HTTPS**                                                                 |
+|--------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **Protocol**             | HyperText Transfer Protocol                                               | HyperText Transfer Protocol Secure (HTTP over TLS/SSL)                    |
+| **Port**                 | Port **80** by default                                                    | Port **443** by default                                                   |
+| **Encryption**           | ❌ No encryption — data is sent in plaintext                              | ✅ Uses **TLS (formerly SSL)** to encrypt data end-to-end                  |
+| **Authentication**       | ❌ No verification of server identity                                     | ✅ Uses **digital certificates** to verify server authenticity            |
+| **Data Visibility**      | ✅ Anyone intercepting traffic can read it (MITM risk)                    | ❌ Data is encrypted; third parties can’t see the content                 |
+| **Performance**          | ✅ Slightly faster due to no encryption overhead                          | ⚠️ Slightly slower due to encryption, but often negligible with HTTP/2    |
+| **Security**             | ❌ Vulnerable to eavesdropping, tampering, and impersonation              | ✅ Protects against **MITM, tampering**, and data theft                   |
+| **SEO Ranking**          | ❌ Not favored by search engines                                          | ✅ Google and others give ranking boosts to HTTPS sites                   |
+| **Browser Indicator**    | ❌ “Not secure” warning in modern browsers                                | ✅ Shows padlock icon and sometimes “Secure” label                        |
+| **Use Cases**            | ✅ OK for public, non-sensitive sites (e.g., blogs, static content)       | ✅ Required for **login forms, e-commerce, banking, any sensitive data**  |
+| **Certificate Needed**   | ❌ None                                                                   | ✅ Needs SSL/TLS certificate (can be free via Let’s Encrypt)              |
+| **Content Integrity**    | ❌ Data can be modified in transit without detection                      | ✅ TLS ensures integrity — tampering is detectable                        |
+| **Compliance**           | ❌ Often non-compliant with data protection standards (e.g., GDPR, PCI)   | ✅ HTTPS is required for compliance in many regulatory frameworks         |
 
 ---
 
