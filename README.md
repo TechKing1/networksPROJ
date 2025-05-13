@@ -32,7 +32,7 @@ This project explores and compares HTTP and HTTPS protocols using real-world too
 | **SEO Ranking**          | ❌ Not favored by search engines                                          | ✅ Google and others give ranking boosts to HTTPS sites                   |
 | **Browser Indicator**    | ❌ “Not secure” warning in modern browsers                                | ✅ Shows padlock icon and sometimes “Secure” label                        |
 | **Use Cases**            | ✅ OK for public, non-sensitive sites (e.g., blogs, static content)       | ✅ Required for **login forms, e-commerce, banking, any sensitive data**  |
-| **Certificate Needed**   | ❌ None                                                                   | ✅ Needs SSL/TLS certificate (can be free via Let’s Encrypt)              |
+| **Certificate Needed**   | ❌ None                                                                   | ✅ Needs SSL/TLS certificate (can be free via Let’s Encrypt or self-certified using OpenSSL)              |
 | **Content Integrity**    | ❌ Data can be modified in transit without detection                      | ✅ TLS ensures integrity — tampering is detectable                        |
 | **Compliance**           | ❌ Often non-compliant with data protection standards (e.g., GDPR, PCI)   | ✅ HTTPS is required for compliance in many regulatory frameworks         |
 
