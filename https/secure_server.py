@@ -6,7 +6,7 @@ import sys
 
 # === CONFIG ===
 CERT_FILE = "cert.pem"
-KEY_FILE = "cert.key"
+KEY_FILE = "D:/networks/networksPROJ/.gitignore/cert.key"
 PORT = 4443
 
 # === Check if certificate and key exist ===
