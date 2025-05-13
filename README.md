@@ -40,8 +40,8 @@ Demonstrate how HTTP POST data (like usernames and passwords) can be intercepted
 
 ### 🔍 Details
 Submitted:
-username=hello123
-password=thisisapassword
+- username=hello123
+- password=thisisapassword
 
 
 ### 📸 Screenshot  
