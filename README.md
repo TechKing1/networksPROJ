@@ -91,7 +91,7 @@ Simulate how HTTP and HTTPS behave in a network environment.
 
 
 HTTPS setup:
-![image](https://github.com/user-attachments/assets/38f0979c-9cc1-4688-9214-07fa71bf7846)
+![image](https://github.com/user-attachments/assets/004fd4f0-c501-4b83-ae10-b184f5748cb3)
 
 ### 🧠 Notes
 Cisco Packet Tracer doesn't simulate real TLS encryption, but it allows you to show protocol differences and port usage visually.
