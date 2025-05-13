@@ -5,7 +5,7 @@ import os
 import sys
 
 # === CONFIG ===
-CERT_FILE = "cert.pem"
+CERT_FILE = "https\cert.pem"
 KEY_FILE = "D:/networks/networksPROJ/.gitignore/cert.key"
 PORT = 4443
 
