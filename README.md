@@ -241,7 +241,7 @@ python secure_server.py
 https://localhost:4443
 ```
 
-Self-certifcate warning:
+Self-certificate warning:
 ![image](https://github.com/user-attachments/assets/c4b0d46d-dc74-4d2e-a82f-854669dbbb5a)
 
 Wireshark TLS traffic:
